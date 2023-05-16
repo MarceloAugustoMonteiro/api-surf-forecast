@@ -1,0 +1,24 @@
+{
+  "name": "typescript-api-surf-forecast",
+  "version": "1.0.0",
+  "description": "Typescript Node API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "api"
+  ],
+  "author": "Marcelo Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast/issues"
+  },
+  "homepage": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast#readme"
+}
