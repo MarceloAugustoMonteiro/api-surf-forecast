@@ -4,6 +4,8 @@
   "description": "Typescript Node API",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast/issues"
   },
-  "homepage": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast#readme"
+  "homepage": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^20.1.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
 }
