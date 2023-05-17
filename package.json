@@ -6,6 +6,10 @@
   "scripts": {
     "build": "tsc",
     "start": "yarn build && node dist/src/index.js",
+    "start:local": "ts-node-dev --transpile-only src/index.ts",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test:functional": "jest --projects ./test --forceExit --runInBand",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +28,17 @@
   },
   "homepage": "https://github.com/MarceloAugustoMonteiro/node-typescript-api-surf-forecast#readme",
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^20.1.7",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.40.0",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.0",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
